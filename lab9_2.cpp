@@ -1,7 +1,19 @@
 #include<iostream>
 using namespace std;
 
-//Write the function printO() here
+void printO(int rows, int cols){
+	if(rows <= 0 || cols <= 0){
+		cout << "Invalid input" << "\n";
+		return;
+	}
+
+	for(int i = 0; i < rows; i++){
+		for(int j = 0; j < cols; j++){
+			cout << "O";
+		}
+		cout << "\n";
+	}
+}
 
 int main(){
 	
